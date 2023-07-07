@@ -1,0 +1,32 @@
+namespaces:
+  - name: project1
+    enabled: true
+    labels:
+      appId: "app1"
+      techArea: "InternalApplication"
+      owner: "joe.blogs_acme.com"
+      slaTier: "1"
+      drRating: "3"
+    bindings:
+      - name: project1-admin
+        kind: Group
+        role: admin
+        roleType: ClusterRole
+      - name: project1-edit
+        kind: Group
+        role: edit
+        roleType: ClusterRole
+      - name: project1-view
+        kind: Group
+        role: view
+        roleType: ClusterRole
+    operatorgroup: false
+    resourceQuota:
+      hard:
+        limits.memory: "8Gi"
+        requests.cpu: "2"
+        requests.memory: "8Gi"
+        persistentvolumeclaims: "5"
+        requests.storage: "100Gi"
+    egressIps:
+      - 192.168.17.101
