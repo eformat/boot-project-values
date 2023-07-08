@@ -1,6 +1,6 @@
 namespaces:
   - name: project1
-    enabled: false
+    enabled: true
     displayName: "Project 1"
     description: "Team 1 Project"
     labels:
