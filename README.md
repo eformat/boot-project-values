@@ -7,3 +7,7 @@ Use this Helm Chart with ArgoCD when practicing "Everything as Code" using GitOp
 - https://github.com/eformat/boot-project
 
 This repo contains the per-cluster, per-project helm values files.
+
+See also:
+
+- https://github.com/eformat/boot-project-gitops
