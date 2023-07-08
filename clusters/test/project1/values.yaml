@@ -1,24 +1,24 @@
 namespaces:
-  - name: project2-dev
+  - name: project1-test
     enabled: true
-    displayName: "Project 2 Dev"
-    description: "Team 2 Dev Project"
+    displayName: "Project 1 Test"
+    description: "Team 1 Test Project"
     labels:
-      appId: "app2"
-      techArea: "ExternalApplication"
-      owner: "mickey.mouse_acme.com"
-      slaTier: "2"
-      drRating: "2"
+      appId: "app1"
+      techArea: "InternalApplication"
+      owner: "joe.blogs_acme.com"
+      slaTier: "1"
+      drRating: "3"
     bindings:
-      - name: project2-admin
+      - name: project1-admin
         kind: Group
         role: admin
         roleType: ClusterRole
-      - name: project2-edit
+      - name: project1-edit
         kind: Group
         role: edit
         roleType: ClusterRole
-      - name: project2-view
+      - name: project1-view
         kind: Group
         role: view
         roleType: ClusterRole
@@ -31,4 +31,4 @@ namespaces:
         persistentvolumeclaims: "5"
         requests.storage: "100Gi"
     egressIps:
-      - 192.168.17.100
+      - 192.168.17.101
