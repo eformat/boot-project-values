@@ -30,5 +30,5 @@ namespaces:
         requests.memory: "8Gi"
         persistentvolumeclaims: "5"
         requests.storage: "100Gi"
-    # egressIps:
-    #   - 192.168.17.100
+    egressIps:
+      - 192.168.17.100
